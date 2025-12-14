@@ -1,0 +1,14 @@
+specify the following tag captions
+
+e.g 
+1. h1 //blocklevel
+
+
+work
+1. paragraph  //blocklevel
+2. h4 //blocklevel
+3. italicing tags //InLine 
+strong tags - <strong>  //InLine
+div tags //blocklevel
+emphasis tag //InLine
+a tag //InLine
