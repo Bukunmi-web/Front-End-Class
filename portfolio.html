@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agunbiade Oluwabukunmi | Full Stack Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-secondary: #020617cc;
+      --accent: #38bdf8;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+      --border: #1e293b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #020617, #020617f2);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .badge {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      max-width: 650px;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    #about p {
+      max-width: 720px;
+      color: var(--text-muted);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .skill-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .skill-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      padding: 1.6rem;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .project span {
+      font-size: 0.7rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .project h3 {
+      font-size: 1.1rem;
+    }
+
+    .project p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .project a {
+      margin-top: auto;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    .contact p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2.5rem 2rem 3rem;
+      border-top: 1px solid var(--border);
+      color: #64748b;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      header { padding-top: 3rem; }
+      section { padding: 3rem 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="badge">FULL STACK DEVELOPER</span>
+    <h1>Agunbiade Oluwabukunmi</h1>
+    <p>
+      Mid-level full stack developer focused on building reliable, maintainable,
+      and scalable web applications using modern frontend and backend technologies.
+    </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.docx" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a mid-level full stack developer with hands-on experience building and
+      deploying real-world web applications. I enjoy working across the stack,
+      collaborating with teams, and continuously improving code quality and
+      system performance.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React, Next.js, Responsive Design</p>
+      </div>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <p>Node.js, Express, REST APIs, Java (Spring Boot), Python (Django)</p>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>MongoDB, PostgreSQL, MySQL</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>Git, GitHub, Docker, Linux, Basic CI/CD</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <span>FULL STACK</span>
+        <h3>E-Commerce Platform</h3>
+        <p>MERN stack e-commerce application with authentication and product management.</p>
+        <a href="https://github.com/bukunmi-web/ecommerce-app" target="_blank">GitHub →</a>
+      </div>
+      <div class="project">
+        <span>BACKEND</span>
+        <h3>Task Management API</h3>
+        <p>RESTful API with role-based access control and JWT authentication.</p>
+        <a href="https://github.com/bukunmi-web/task-manager-api" target="_blank">GitHub →</a>
+      </div>
+      <div class="project">
+        <span>PERSONAL</span>
+        <h3>Portfolio Website</h3>
+        <p>Responsive developer portfolio built with clean UI and semantic HTML.</p>
+        <a href="https://github.com/bukunmi-web/portfolio" target="_blank">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: oluwabukunmiadeolu13@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/agunbiade-oluwabukunmi</p>
+    <a class="resume-btn" href="resume.docx" target="_blank">Download Resume</a>
+  </section>
+
+  <footer>
+    © 2025 Agunbiade Oluwabukunmi. All rights reserved.
+  </footer>
+
+</body>
+</html>
